@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de validación</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="user_name" required>
+        <label for="apellidp">Apellido</label>
+        <input type="text" id="apellido" name="user_name" required> <br>
+        <label for="mail">Correo Electrónico</label>
+        <input type="email" id="mail" name="user_mail" required>
+        <label for="date"> fecha</label>
+        <input type="date" id="date" name="trip-start"
+         value="2018-07-22"
+          min="2018-01-01" max="2022-12-31" required><br>
+        <input type="radio" name="Mujer" value="Hombre"> Mujer
+        <input type="radio" name="Hombre" value="Hombre"> Hombre <br>
+
+        <h2>Estrato</h2>
+        <select name="cars" id="cars">
+            <option value="1">Uno</option>
+            <option value="2">Dos</option>
+            <option value="3">Tres</option>
+            <option value="4">Cuatro</option>
+          </select>
+
+        <h2>Hobbis</h2>
+        <label for="cbox1">Ciclismo</label>
+        <input type="checkbox" id="cbox1" value="checkbox" ><br>
+        <label for="cbox2">Patinaje</label>
+        <input type="checkbox" id="cbox2" value="checkbox" required><br>
+        <label for="cbox3">Gym</label>
+        <input type="checkbox" id="cbox3" value="checkbox" ><br>
+        <label for="cbox4">Baloncesto</label>
+        <input type="checkbox" id="cbox4" value="checkbox" ><br>
+        <label for="imagen"></label>
+        <input type="file" id="imagen" name="imagen" type="POST" enctype="multipart/formdata" required> 
+        <button>Enviar</button>
+    </form>
+
+    <script src="form.js"></script>
+    
+</body>
+</html>
