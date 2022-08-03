@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de validación</title>
+</head>
+<body>
+
+    <form action="" id="form">
+        <label for="name">Nombre</label>
+        <input type="text" id="myname" name="user_name" placeholder="Mayra" >
+        <label for="apellidp">Apellido</label>
+        <input type="text" id="apellido" name="lastname" > <br>
+        <label for="mail">Correo Electrónico</label>
+        <input type="email" id="email-form" name="user_mail" >
+        <label for="date"> fecha</label>
+        <input type="date" id="date" name="trip-start"
+         value="2018-07-22"
+          min="2018-01-01" max="2022-12-31" ><br>
+        <input type="radio" name="sexo" value="Mujer"> Mujer
+        <input type="radio" name="sexo" value="Hombre"> Hombre <br>
+
+        <h2>Estrato</h2>
+        <select name="estrato" id="estrato">
+            <option value="">Escoger</option>
+            <option value="Estrato 1">Uno</option>
+            <option value="Estrato 2">Dos</option>
+            <option value="Estrato 3">Tres</option>
+            <option value="Estrato 4">Cuatro</option>
+          </select>
+
+        <h2>Hobbis</h2>
+        <label for="cbox1">Ciclismo</label>
+        <input type="checkbox" id="cbox1" name="chek" value="Ciclismo" ><br>
+        <label for="cbox2">Patinaje</label>
+        <input type="checkbox" id="cbox2" name="chek" value="Patinaje" ><br>
+        <label for="cbox3">Gym</label>
+        <input type="checkbox" id="cbox3" name="chek" value="Gym" ><br>
+        <label for="cbox4">Baloncesto</label>
+        <input type="checkbox" id="cbox4" name="chek" value="Baloncesto" ><br>
+        <label for="imagen"></label>
+        <input type="file" id="imagen" name="imagen" type="POST" enctype="multipart/formdata" > 
+        <button>Enviar</button>
+    </form>
+
+    <script src="form.js"></script>
+    
+</body>
+</html>
